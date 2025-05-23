@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class CIValorregistros(Document):
+class CIUbicacion(Document):
 	pass

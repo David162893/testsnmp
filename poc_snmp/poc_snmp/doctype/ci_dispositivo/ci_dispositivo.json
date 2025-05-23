@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:DP-{######}",
  "creation": "2025-05-20 09:23:36.232643",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,61 +10,79 @@
   "marca",
   "modelo",
   "n\u00ba_serie",
-  "ubicacion",
   "ip_local",
+  "cliente",
+  "ubicacion",
   "plantilla_mib",
-  "cliente"
+  "comprobacion"
  ],
  "fields": [
   {
    "fieldname": "id",
    "fieldtype": "Data",
-   "label": "id"
+   "label": "ID"
   },
   {
    "fieldname": "marca",
-   "fieldtype": "Data",
-   "label": "Marca"
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Marca",
+   "options": "CI Marca"
   },
   {
    "fieldname": "modelo",
-   "fieldtype": "Data",
-   "label": "Modelo"
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Modelo",
+   "link_filters": "[[\"CI Modelo\",\"marca\",\"=\",\"eval: doc.marca\"]]",
+   "options": "CI Modelo"
   },
   {
    "fieldname": "n\u00ba_serie",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "N\u00ba serie"
   },
   {
    "fieldname": "ubicacion",
-   "fieldtype": "Data",
-   "label": "Ubicacion"
+   "fieldtype": "Link",
+   "label": "Ubicacion",
+   "link_filters": "[[\"CI Ubicacion\", \"cliente\", \"=\", \"eval: doc.cliente\"]]",
+   "options": "CI Ubicacion"
   },
   {
    "fieldname": "ip_local",
    "fieldtype": "Data",
-   "label": "Ip local"
+   "label": "IP local"
   },
   {
    "fieldname": "plantilla_mib",
-   "fieldtype": "Data",
-   "label": "Plantilla Mib"
+   "fieldtype": "Link",
+   "label": "Plantilla Mib",
+   "options": "CI Plantilla comprobacion"
   },
   {
    "fieldname": "cliente",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Cliente",
    "options": "CI Cliente"
+  },
+  {
+   "fieldname": "comprobacion",
+   "fieldtype": "Table",
+   "label": "Comprobaciones",
+   "options": "CI Comprobacion"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-20 13:12:31.484579",
+ "modified": "2025-05-23 10:48:38.001549",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Dispositivo",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

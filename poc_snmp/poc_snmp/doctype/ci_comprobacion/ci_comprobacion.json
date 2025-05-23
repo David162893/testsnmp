@@ -1,34 +1,40 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:CO-{denominacion}-{oid}",
  "creation": "2025-05-20 09:22:55.943482",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "oid",
-  "nome"
+  "denominacion",
+  "oid"
  ],
  "fields": [
   {
    "fieldname": "oid",
    "fieldtype": "Data",
-   "label": "oid"
+   "in_list_view": 1,
+   "label": "OID",
+   "reqd": 1
   },
   {
-   "fieldname": "nome",
+   "fieldname": "denominacion",
    "fieldtype": "Data",
-   "label": "Nome"
+   "in_list_view": 1,
+   "label": "Denominaci\u00f3n",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-05-20 09:23:17.302240",
+ "modified": "2025-05-23 08:24:42.131082",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Comprobacion",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

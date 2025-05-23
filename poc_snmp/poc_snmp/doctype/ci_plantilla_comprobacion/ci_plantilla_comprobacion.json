@@ -1,26 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:PL-{nome}-{###}",
  "creation": "2025-05-20 09:21:39.222172",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "nome"
+  "nome",
+  "comprobaciones"
  ],
  "fields": [
   {
    "fieldname": "nome",
    "fieldtype": "Data",
    "label": "Nome"
+  },
+  {
+   "fieldname": "comprobaciones",
+   "fieldtype": "Table",
+   "label": "Comprobaciones",
+   "options": "CI Comprobacion"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-20 09:21:59.500944",
+ "modified": "2025-05-23 10:51:24.846790",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Plantilla comprobacion",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

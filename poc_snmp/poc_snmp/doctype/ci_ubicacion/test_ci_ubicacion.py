@@ -12,18 +12,18 @@ EXTRA_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
-class UnitTestCIRegistrosComprobacionValor(UnitTestCase):
+class UnitTestCIUbicacion(UnitTestCase):
 	"""
-	Unit tests for CIRegistrosComprobacionValor.
+	Unit tests for CIUbicacion.
 	Use this class for testing individual functions and methods.
 	"""
 
 	pass
 
 
-class IntegrationTestCIRegistrosComprobacionValor(IntegrationTestCase):
+class IntegrationTestCIUbicacion(IntegrationTestCase):
 	"""
-	Integration tests for CIRegistrosComprobacionValor.
+	Integration tests for CIUbicacion.
 	Use this class for testing interactions between multiple components.
 	"""
 

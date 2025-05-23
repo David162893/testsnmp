@@ -6,29 +6,39 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "denominacion",
   "oid",
-  "nome"
+  "valor"
  ],
  "fields": [
   {
    "fieldname": "oid",
    "fieldtype": "Data",
-   "label": "oid"
+   "in_list_view": 1,
+   "label": "OID"
   },
   {
-   "fieldname": "nome",
+   "fieldname": "denominacion",
    "fieldtype": "Data",
-   "label": "Nome"
+   "in_list_view": 1,
+   "label": "Denominaci\u00f3n"
+  },
+  {
+   "fieldname": "valor",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Valor",
+   "precision": "2"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-05-20 13:13:11.271776",
+ "modified": "2025-05-22 10:48:48.644662",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
- "name": "CI Comporbacion registros",
+ "name": "CI Comprobacion Registro",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

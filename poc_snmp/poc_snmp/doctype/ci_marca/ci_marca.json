@@ -1,26 +1,28 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "field:nome",
  "creation": "2025-05-20 09:20:48.260583",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "nombre"
+  "nome"
  ],
  "fields": [
   {
-   "fieldname": "nombre",
+   "fieldname": "nome",
    "fieldtype": "Data",
-   "label": "Nome"
+   "label": "Nome",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-20 09:22:21.186519",
+ "modified": "2025-05-22 10:12:25.192822",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Marca",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

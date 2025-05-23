@@ -1,33 +1,42 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "field:nome",
  "creation": "2025-05-20 09:21:18.847224",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "nombre",
+  "marca",
+  "nome",
   "plantilla"
  ],
  "fields": [
-  {
-   "fieldname": "nombre",
-   "fieldtype": "Data",
-   "label": "Nome"
-  },
   {
    "fieldname": "plantilla",
    "fieldtype": "Link",
    "label": "Plantilla",
    "options": "CI Plantilla comprobacion"
+  },
+  {
+   "fieldname": "marca",
+   "fieldtype": "Link",
+   "label": "Marca",
+   "options": "CI Marca"
+  },
+  {
+   "fieldname": "nome",
+   "fieldtype": "Data",
+   "label": "Nome",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-20 12:53:07.933564",
+ "modified": "2025-05-22 10:12:48.371210",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Modelo",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

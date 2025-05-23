@@ -1,58 +1,50 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "hash",
  "creation": "2025-05-20 09:29:56.734844",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "dispositivo",
   "fecha",
-  "hora",
   "ip",
-  "comprobacion",
-  "valor"
+  "comprobacion"
  ],
  "fields": [
   {
    "fieldname": "dispositivo",
-   "fieldtype": "Data",
-   "label": "Dispositivo"
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Dispositivo",
+   "options": "CI Dispositivo"
   },
   {
    "fieldname": "fecha",
-   "fieldtype": "Data",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
    "label": "Fecha"
-  },
-  {
-   "fieldname": "hora",
-   "fieldtype": "Time",
-   "label": "Hora"
   },
   {
    "fieldname": "ip",
    "fieldtype": "Data",
-   "label": "Ip"
+   "label": "IP"
   },
   {
    "fieldname": "comprobacion",
-   "fieldtype": "Link",
-   "label": "Comprobacion",
-   "options": "CI Comporbacion registros"
-  },
-  {
-   "fieldname": "valor",
-   "fieldtype": "Link",
-   "label": "Valor",
-   "options": "CI Valor registros"
+   "fieldtype": "Table",
+   "label": "Comprobaciones",
+   "options": "CI Comprobacion Registro"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-20 13:14:50.431765",
+ "modified": "2025-05-22 13:30:30.229470",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
- "name": "CI Registros Comprobacion Valor",
+ "name": "CI Registro",
+ "naming_rule": "Random",
  "owner": "Administrator",
  "permissions": [
   {

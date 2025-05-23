@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class CIRegistrosComprobacionValor(Document):
+class CIComprobacionRegistro(Document):
 	pass

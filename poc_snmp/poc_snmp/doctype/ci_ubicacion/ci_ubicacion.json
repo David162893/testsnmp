@@ -1,39 +1,37 @@
 {
  "actions": [],
- "autoname": "format:CL-{###}",
- "creation": "2025-05-20 09:19:39.279369",
+ "allow_rename": 1,
+ "autoname": "format:{nome}",
+ "creation": "2025-05-23 08:27:55.693582",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "id",
-  "nome"
+  "nome",
+  "cliente"
  ],
  "fields": [
-  {
-   "fieldname": "id",
-   "fieldtype": "Data",
-   "label": "ID"
-  },
   {
    "fieldname": "nome",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "in_preview": 1,
    "label": "Nome"
+  },
+  {
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cliente",
+   "options": "CI Cliente"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [
-  {
-   "link_doctype": "CI Ubicacion",
-   "link_fieldname": "cliente"
-  }
- ],
- "modified": "2025-05-23 10:50:00.141044",
+ "links": [],
+ "modified": "2025-05-23 10:47:12.843759",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
- "name": "CI Cliente",
+ "name": "CI Ubicacion",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -51,11 +49,7 @@
   }
  ],
  "row_format": "Dynamic",
- "show_preview_popup": 1,
- "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": [],
- "title_field": "nome",
- "translated_doctype": 1
+ "states": []
 }
