@@ -7,8 +7,9 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "nome",
-  "cliente"
+  "cliente",
+  "column_break_cdzr",
+  "nome"
  ],
  "fields": [
   {
@@ -23,12 +24,16 @@
    "in_list_view": 1,
    "label": "Cliente",
    "options": "CI Cliente"
+  },
+  {
+   "fieldname": "column_break_cdzr",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-23 10:47:12.843759",
+ "modified": "2025-05-23 11:41:47.612548",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Ubicacion",

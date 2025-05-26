@@ -6,9 +6,11 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "registro_de_comprobaci\u00f3n_de_un_dispositivo_section",
   "dispositivo",
-  "fecha",
   "ip",
+  "column_break_tpyb",
+  "fecha",
   "comprobacion"
  ],
  "fields": [
@@ -35,12 +37,21 @@
    "fieldtype": "Table",
    "label": "Comprobaciones",
    "options": "CI Comprobacion Registro"
+  },
+  {
+   "fieldname": "column_break_tpyb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "registro_de_comprobaci\u00f3n_de_un_dispositivo_section",
+   "fieldtype": "Section Break",
+   "label": "Registro de comprobaci\u00f3n de un dispositivo"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-22 13:30:30.229470",
+ "modified": "2025-05-26 10:01:57.002389",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Registro",

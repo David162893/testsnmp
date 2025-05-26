@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "datos_de_la_platilla_section",
   "nome",
   "comprobaciones"
  ],
@@ -20,12 +21,17 @@
    "fieldtype": "Table",
    "label": "Comprobaciones",
    "options": "CI Comprobacion"
+  },
+  {
+   "fieldname": "datos_de_la_platilla_section",
+   "fieldtype": "Section Break",
+   "label": "Datos de la platilla"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-23 10:51:24.846790",
+ "modified": "2025-05-23 11:40:38.986835",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Plantilla comprobacion",

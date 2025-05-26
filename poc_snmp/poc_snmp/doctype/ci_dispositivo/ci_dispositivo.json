@@ -6,13 +6,16 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "datos_del_dispositivo_section",
   "id",
   "marca",
   "modelo",
   "n\u00ba_serie",
+  "column_break_jlee",
   "ip_local",
   "cliente",
   "ubicacion",
+  "section_break_qina",
   "plantilla_mib",
   "comprobacion"
  ],
@@ -46,6 +49,7 @@
   {
    "fieldname": "ubicacion",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Ubicacion",
    "link_filters": "[[\"CI Ubicacion\", \"cliente\", \"=\", \"eval: doc.cliente\"]]",
    "options": "CI Ubicacion"
@@ -73,12 +77,26 @@
    "fieldtype": "Table",
    "label": "Comprobaciones",
    "options": "CI Comprobacion"
+  },
+  {
+   "fieldname": "column_break_jlee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qina",
+   "fieldtype": "Section Break",
+   "label": "Comprobaciones a realizar "
+  },
+  {
+   "fieldname": "datos_del_dispositivo_section",
+   "fieldtype": "Section Break",
+   "label": "Datos del dispositivo"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-23 10:48:38.001549",
+ "modified": "2025-05-23 11:39:38.965381",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Dispositivo",

@@ -5,7 +5,9 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "datos_del_cliente_section",
   "id",
+  "column_break_nnyc",
   "nome"
  ],
  "fields": [
@@ -20,6 +22,15 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Nome"
+  },
+  {
+   "fieldname": "column_break_nnyc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "datos_del_cliente_section",
+   "fieldtype": "Section Break",
+   "label": "Datos del cliente"
   }
  ],
  "grid_page_length": 50,
@@ -30,7 +41,7 @@
    "link_fieldname": "cliente"
   }
  ],
- "modified": "2025-05-23 10:50:00.141044",
+ "modified": "2025-05-23 11:39:52.685141",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Cliente",
