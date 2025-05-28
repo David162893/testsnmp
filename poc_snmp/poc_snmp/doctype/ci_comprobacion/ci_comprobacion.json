@@ -1,13 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:CO-{denominacion}-{oid}",
+ "autoname": "format:CO-{######}",
  "creation": "2025-05-20 09:22:55.943482",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "denominacion",
+  "frecuencia",
   "column_break_wcyn",
   "oid"
  ],
@@ -29,13 +30,21 @@
   {
    "fieldname": "column_break_wcyn",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "frecuencia",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Frecuencia",
+   "options": "Hora\nDiario\nMensual",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-05-23 11:36:09.000617",
+ "modified": "2025-05-27 09:21:22.232965",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Comprobacion",

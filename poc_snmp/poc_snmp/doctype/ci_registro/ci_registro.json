@@ -11,6 +11,7 @@
   "ip",
   "column_break_tpyb",
   "fecha",
+  "section_break_vces",
   "comprobacion"
  ],
  "fields": [
@@ -46,12 +47,16 @@
    "fieldname": "registro_de_comprobaci\u00f3n_de_un_dispositivo_section",
    "fieldtype": "Section Break",
    "label": "Registro de comprobaci\u00f3n de un dispositivo"
+  },
+  {
+   "fieldname": "section_break_vces",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-26 10:01:57.002389",
+ "modified": "2025-05-27 11:35:15.115761",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Registro",
