@@ -20,24 +20,28 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Dispositivo",
-   "options": "CI Dispositivo"
+   "options": "CI Dispositivo",
+   "read_only": 1
   },
   {
    "fieldname": "fecha",
    "fieldtype": "Datetime",
    "in_list_view": 1,
-   "label": "Fecha"
+   "label": "Fecha",
+   "read_only": 1
   },
   {
    "fieldname": "ip",
    "fieldtype": "Data",
-   "label": "IP"
+   "label": "IP",
+   "read_only": 1
   },
   {
    "fieldname": "comprobacion",
    "fieldtype": "Table",
    "label": "Comprobaciones",
-   "options": "CI Comprobacion Registro"
+   "options": "CI Comprobacion Registro",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_tpyb",
@@ -56,7 +60,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-27 11:35:15.115761",
+ "modified": "2025-06-05 12:48:54.516900",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Registro",

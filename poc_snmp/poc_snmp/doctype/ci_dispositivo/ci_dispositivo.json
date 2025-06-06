@@ -15,6 +15,7 @@
   "ip_local",
   "cliente",
   "ubicacion",
+  "ultimo_envio",
   "section_break_qina",
   "plantilla_mib",
   "comprobacion"
@@ -91,12 +92,22 @@
    "fieldname": "datos_del_dispositivo_section",
    "fieldtype": "Section Break",
    "label": "Datos del dispositivo"
+  },
+  {
+   "fieldname": "ultimo_envio",
+   "fieldtype": "Datetime",
+   "label": "Ultimo envio"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-05-26 12:15:24.857495",
+ "links": [
+  {
+   "link_doctype": "CI Registro",
+   "link_fieldname": "dispositivo"
+  }
+ ],
+ "modified": "2025-06-05 12:50:17.475277",
  "modified_by": "Administrator",
  "module": "Poc Snmp",
  "name": "CI Dispositivo",
