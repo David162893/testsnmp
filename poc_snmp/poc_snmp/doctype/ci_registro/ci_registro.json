@@ -20,8 +20,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Dispositivo",
-   "options": "CI Dispositivo",
-   "read_only": 1
+   "options": "CI Dispositivo"
   },
   {
    "fieldname": "fecha",
@@ -40,8 +39,7 @@
    "fieldname": "comprobacion",
    "fieldtype": "Table",
    "label": "Comprobaciones",
-   "options": "CI Comprobacion Registro",
-   "read_only": 1
+   "options": "CI Comprobacion Registro"
   },
   {
    "fieldname": "column_break_tpyb",
