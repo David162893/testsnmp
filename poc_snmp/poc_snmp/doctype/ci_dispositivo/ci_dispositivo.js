@@ -1,13 +1,8 @@
 // Copyright (c) 2025, David and contributors
 // For license information, please see license.txt
 
-
-// Controlador principal del formulario CI Dispositivo
-// Maneja eventos y lógica personalizada/
 frappe.ui.form.on("CI Dispositivo", {
 
-    
-    // Evento refresh - Se ejecuta al cargar/actualizar el formulario
     refresh: function (frm) {
         // Agrega botón personalizado para reenvío de registros
         frm.add_custom_button(__('Reenviar Registro'), function () {

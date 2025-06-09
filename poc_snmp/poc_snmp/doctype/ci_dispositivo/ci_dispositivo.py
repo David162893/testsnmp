@@ -3,14 +3,26 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.model.mapper import get_mapped_doc
 
 class CIDispositivo(Document):
-	pass
+    pass
 
 @frappe.whitelist()
 def delete_last_sent(docname):
-	dispositivo_doc = frappe.get_doc("CI Dispositivo", docname)
-	for comprobacion in dispositivo_doc.comprobacion:
-		comprobacion.ultimo_envio = None
-	dispositivo_doc.save()
+    # Resetea el campo ultimo_envio en todas las comprobaciones
+    doc = frappe.get_doc("CI Dispositivo", docname)
+    
+    # Actualiza cada comprobación
+    for comp in doc.comprobacion:
+        comp.ultimo_envio = None
+
+    doc.save() 
+
+@frappe.whitelist()
+def cargar_comprobaciones(plantilla_name):
+    # Obtiene comprobaciones desde plantilla
+    if not plantilla_name:
+        return None
+        
+    plantilla = frappe.get_doc("CI Plantilla comprobacion", plantilla_name)
+    return plantilla.comprobaciones if plantilla else None
