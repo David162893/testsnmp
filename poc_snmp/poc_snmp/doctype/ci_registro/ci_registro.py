@@ -21,9 +21,10 @@ class CIRegistro(Document):
         # 4. Sincroniza timestamps para comprobaciones coincidentes
         # Crea diccionario para búsqueda eficiente
         oids_registro = {c.oid: c for c in self.comprobacion}
-        
+
         for comprobacion in dispositivo_doc.comprobacion:
             if comprobacion.oid in oids_registro:
-                comprobacion.ultimo_envio = self.fecha  # Actualiza coincidencias
+                comprobacion.ultimo_envio = self.fecha
+                comprobacion.ultimo_valor = oids_registro[comprobacion.oid].valor
 
         dispositivo_doc.save()
